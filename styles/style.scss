@@ -1,0 +1,34 @@
+@use "./vendor/normalize";
+@use "./partials/colors";
+@use "./partials/mixins";
+@use "./partials/typography";
+
+.navigation {
+    background-color: #414141;
+    a {
+        @include mixins.orange ();
+    }
+    padding: 5px;
+    text-align: center;
+    font-family: typography.$heading;
+}
+
+.main_btn{
+    @include mixins.button();
+}
+
+.section {
+    font-family: typography.$title-font;
+    color: #575757;
+}
+
+.text {
+    font-family: typography.$primary-font;
+    color: #DB8D33;
+    background-color: #150300;
+}
+
+
+
+
+
